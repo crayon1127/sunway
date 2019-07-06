@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<router-outlet>
+  <body>
+    <div style="text-align:center">
+      <h2>
+        Welcome to {{ title }}!
+      </h2>
+    </div>
+    <div style="text-align:center;margin:40px">
+      <!-- <button (click)="doClick($event)" myid="test1">1</button>
+      <button (click)="doClick($event)" myid="test2">2</button>
+      <button (click)="doClick($event)" myid="test3">3</button>
+      <button (click)="doClick($event)" myid="test4">4</button> -->
+      <p style="margin-bottom:10px">输入:</p>
+      <input class="textInput" type="text" (input)='changeInput($event)'>
+      <p style="margin-top:10px">
+        输出: {{text}}
+      </p>
+    </div>
+  <nav style="margin-top:10px">
+    <div class="navicon" (click)="goHome()">首页</div>
+    <div class="navicon" (click)="goList()">列表</div>
+    <div class="navicon" (click)="goCart()">购物车</div>
+  </nav>
+</body>
+</router-outlet>

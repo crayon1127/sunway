@@ -1,0 +1,8 @@
+
+  <h2>shop-List works!</h2>
+  <table *ngFor="let item of list">
+    <td>{{item.name}}</td>
+    <td>{{item.price}}元</td>
+    <td><button (click)="buyShop(item)">buy</button></td>
+  </table>
+

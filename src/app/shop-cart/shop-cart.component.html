@@ -1,0 +1,17 @@
+<h2>
+  shop-Cart works!
+</h2>
+<p *ngIf="cartList == ''" style="text-align: center">购物车为空，快去购物吧</p>
+
+<table *ngIf="cartList != ''">
+  <td>商品</td>
+  <td>单价</td>
+  <td>数量</td>
+  <td>总价</td>
+  <tr *ngFor="let item of cartList">
+    <td>{{item.name}}</td>
+    <td>{{item.price}}元</td>
+    <td>{{item.number}}</td>
+    <td></td>
+  </tr>
+</table>
